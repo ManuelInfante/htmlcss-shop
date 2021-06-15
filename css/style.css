@@ -1,5 +1,123 @@
+/* ALL */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* /ALL */
+
+/* COMMON */
+
+main{
+width: 60%;
+margin: 1% auto;
+font-family: elvetica;
+}
+    /* Colori */
+    .red{
+        background-color: red;
+    }
+
+    .green{
+        background-color: rgb(16, 139, 0);
+    }
+    /* Colori */
+
+    /* regole font */
+    .upper{
+        text-transform: uppercase;
+    }
+    /* /regole font */
+
+/* / COMMON */
+
+/* BOX PRODOTTO */
+
+.product_box{
+    width: calc((99% / 3) - 5px);
+    display: inline-block;
+    margin: 0 2px;
+}
+
+    /* Immagine - tags - wishlist input */
+    .photo_container{
+        position:relative
+    }
+
+    .product_box img{
+        width: 100%;
+    }
+
+    .photo_container div{
+    position: absolute;
+    }
+
+    .tag_container{
+        bottom: 6%;
+        left: 0;
+    }
+
+    .tag_container span{
+        padding: 5px;
+        color: white;
+    }
+
+
+    .tag:first-child{
+        margin-right: 10px;
+    }
+
+    .wishlist_input{
+        top:5%;
+        right:0;
+        font-size: 30px;
+        background-color: white;
+        padding: 4%;
+    }
+    /* Immagine - tags - wishlist input */
+
+    /* Marca - Descrizione - prezzo */
+    .description_box > div:first-child{
+        font-size: 15px;
+    }
+    .description_box > div:nth-child(2){
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .price > span:after{
+        content: "\20AC";
+        margin-left: 3px;
+    }
+
+    .price span:first-child{
+        color: red;
+        font-weight: 600;
+    }
+
+    .price span:nth-child(2){
+        text-decoration: line-through;
+    }
+    /* / Marca - Descrizione - prezzo */
+
+    /* Hover Image */
+    .product_box img:last-of-type:not(.single_img){
+        display: none;
+    }
+
+    .product_box:hover img:first-of-type:not(.single_img){
+        display: none;
+    }
+
+    .product_box:hover img:last-of-type:not(.single_img){
+        display: block;
+    }
+    /* Hover Image */
+
+    /* Hover wishlist */
+        .wishlist_input:hover{
+            color: red;
+        }
+    /* / Hover wishlist */
+
+/* BOX PRODOTTO */
